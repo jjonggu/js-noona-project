@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // meetAt(2022); // 결과 --> 2022년
+    // meetAt(2032, 3); // 결과 --> "2032년 3월"
+    // meetAt(1987, 10, 28); // 결과 --> "1987/10/28"
+
+    function meetAt(year, month, day){
+    if(year && month && day){
+        let result  = `${year}년${month}월${day}일`
+        console.log(result);
+    }else if(year && month){
+        let result  = `${year}년${month}월`
+        console.log(result);
+    }else if(year){
+        let result  = `${year}년`
+        console.log(result);
+        }
+    }
+
+    meetAt(4);
+</script>
+
+
+<script>
+    function findSmallestElement(arr){
+        // 어레이가 비어있다.
+        if(arr.length == 0){
+            return 0
+        }else{
+            let result = arr[0]
+            for(let i = 1; i < arr.length; i++){
+                if(result > arr[i]){
+                    result = arr[i]
+                }
+            }
+            return result;
+        }
+    }
+    console.log(findSmallestElement([100,200,3,5,2,1]));
+</script>
+
+<script>
+    let unit = [50000, 10000, 5000, 1000, 500, 100]
+
+    function giveMeMoney(money){
+        for(let i = 0; i < unit.length; i++){
+            let num = Math.floor(money / unit[i])
+            console.log(`${unit[i]}X${num}`);
+            money = money - (unit[i] * num)
+        }
+    }
+
+    giveMeMoney(12300);
+</script>
+
+</html>
