@@ -1,0 +1,42 @@
+/* body에 기본값 margin 8들어가 있어서 0으로 재조정 */
+body {
+    margin:0;
+    background-image: url(images/background.avif);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.task-area {
+    border: 1px solid lightgray;
+}
+
+.task-tabs {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+
+.task-tabs div {
+    padding: 1em;
+}
+
+#under-line {
+    height: 4px;
+    background-color: blueviolet;
+    position: absolute;
+    width: 80px;
+    left: 0px;
+    top: 52px;
+    padding: 0px;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
