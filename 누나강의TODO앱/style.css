@@ -1,33 +1,36 @@
-/* body에 기본값 margin 8들어가 있어서 0으로 재조정 */
 body {
     margin:0;
-    background-image: url(images/background.avif);
-    background-repeat:no-repeat;
+    background-image: url("images/background.avif");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .container {
+    margin-top: 25px;
+    border-radius: 15px;
     background-color: white;
-    min-height: 100vh;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    min-height: 95vh; /* 내가보는 화면의 높이만큼 100vh */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.task-area {
+
+.task-area{
+    margin-top: 20px;
     border: 1px solid lightgray;
 }
 
-.task-tabs {
+.task-tabs{
     display: flex;
     border-bottom: 1px solid lightgray;
     position: relative;
 }
 
-.task-tabs div {
+.task-tabs div{
     padding: 1em;
 }
 
-#under-line {
+#under-line{
     height: 4px;
-    background-color: #002e80;
+    background-color: #002545;
     position: absolute;
     width: 80px;
     left: 0px;
@@ -41,6 +44,17 @@ body {
     padding: 1em;
 }
 
-.task-done{
+.task-done {
     text-decoration: line-through;
 }
+
+.task-tabs div{
+    cursor: pointer;
+}
+
+.input-area{
+    margin-top: 80px;
+}
+
+
+

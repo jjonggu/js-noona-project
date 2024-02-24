@@ -1,0 +1,30 @@
+/* 
+    코딩알려주는누나 
+    1. flexbox 강의듣기
+*/
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 2em;
+}
+/* 첫번째 nav바 */
+nav:first-child{
+    display: flex;
+    justify-content: center;
+}
+/* 몇번째 nav바인지 지정*/
+nav:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#horizontal-uderline{
+    position: absolute;
+    background-color: pink;
+    margin-top: 2px;
+    height: 2px;
+    /* 슬라이드처럼 느리게감 */
+    transition: 0.5s;
+}
